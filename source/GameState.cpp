@@ -3,18 +3,15 @@
 //initializer funtion
 void GameState::initTexture()
 {
-    if (!this->textures["IDLE"].loadFromFile("res/Textures/Idle__000.png"))
+    if (!this->textures["PLAYER_IDLE"].loadFromFile("res/Textures/player.png"))
     {
         throw "ERROR::GAME_STATE::COULD_NOT_LOAD_PLAYER_TEXTURE";
     }
-    // sf::Texture temp;
-    // temp.loadFromFile("res/Textures/Idle__000.png");
-    // this->textures["IDLE"] = temp;
 }
 
 void GameState::initPlayers()
 {
-    this->player = new Player(0, 0, this->textures["IDLE"]);
+    this->player = new Player(0, 0, this->textures["PLAYER_IDLE"]);
 }
 
 // constructor
@@ -68,7 +65,7 @@ void GameState::render(sf::RenderTarget* target)
     if (!target)
         target = this->window;
     
-    this->player->render(target);
+    this->player->render(*target);
     
     
 }

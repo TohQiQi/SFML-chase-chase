@@ -38,6 +38,10 @@ set(SOURCE
 	${CMAKE_SOURCE_DIR}/source/Player.h
 	${CMAKE_SOURCE_DIR}/source/MovementComponent.cpp
 	${CMAKE_SOURCE_DIR}/source/MovementComponent.h
+	${CMAKE_SOURCE_DIR}/source/AnimationComponent.cpp
+	${CMAKE_SOURCE_DIR}/source/AnimationComponent.h
+	${CMAKE_SOURCE_DIR}/source/HitBoxComponent.cpp
+	${CMAKE_SOURCE_DIR}/source/HitBoxComponent.h
 )
  
 # LINK EXTERNAL LIBRARIES TO EXECUTABLE
