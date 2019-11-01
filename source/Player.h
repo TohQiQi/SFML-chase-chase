@@ -13,7 +13,7 @@ class Player : public Entity
     void initComponent();
 
     public:
-        Player(float x, float y, sf::Texture* texture);
+        Player(float x, float y, sf::Texture& texture);
         virtual ~Player();
 
         //functions

@@ -36,6 +36,8 @@ set(SOURCE
 	${CMAKE_SOURCE_DIR}/source/Button.h
 	${CMAKE_SOURCE_DIR}/source/Player.cpp
 	${CMAKE_SOURCE_DIR}/source/Player.h
+	${CMAKE_SOURCE_DIR}/source/MovementComponent.cpp
+	${CMAKE_SOURCE_DIR}/source/MovementComponent.h
 )
  
 # LINK EXTERNAL LIBRARIES TO EXECUTABLE

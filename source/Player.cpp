@@ -8,16 +8,17 @@ void Player::initVariable()
 
 void Player::initComponent()
 {
-
+    //call movement
+    this->createMovementComponent(300.0f, 15.0f, 5.0f);
 }
 
 //constructors
-Player::Player(float x, float y, sf::Texture* texture)
+Player::Player(float x, float y, sf::Texture& texture)
 {
     this->initVariable();
     this->initComponent();
     
-    this->createSprite(texture);
+    this->setTexture(texture);
     this->setPosition(x, y);
 }
 
