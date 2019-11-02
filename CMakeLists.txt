@@ -42,6 +42,8 @@ set(SOURCE
 	${CMAKE_SOURCE_DIR}/source/AnimationComponent.h
 	${CMAKE_SOURCE_DIR}/source/HitBoxComponent.cpp
 	${CMAKE_SOURCE_DIR}/source/HitBoxComponent.h
+	${CMAKE_SOURCE_DIR}/source/PauseMenu.cpp
+	${CMAKE_SOURCE_DIR}/source/PauseMenu.h
 )
  
 # LINK EXTERNAL LIBRARIES TO EXECUTABLE
